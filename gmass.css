@@ -33,3 +33,9 @@
 body{
     padding-bottom: 10vh;
 }
+.sidenav{
+    height:100%;
+}
+.invisible{
+    display:none;
+}
