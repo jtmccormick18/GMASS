@@ -1,6 +1,6 @@
- /*body{
-    background-image: url(assets/zwartevilt.png);
-} */
+ body{
+    background-image: url(assets/atlanta.jpg);
+} 
 .caption{
     box-shadow: 0 0 5px #C8C8C8;
     transition: all 0.3s ease 0s;
@@ -42,4 +42,10 @@ body{
 .maps{
     width:100%;
     height:50vh;
+}
+.datacloud{
+    border:3px solid red !important;
+}
+.dataembed{
+    border:2px solid white !important;
 }
