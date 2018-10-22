@@ -1,16 +1,5 @@
-body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(assets/atlanta.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+body{
+  background-image: url(assets/atlanta.jpg);
     background-size: cover;
   }
 .caption{
@@ -61,8 +50,9 @@ body{
 .dataembed{
     border:2px solid white !important;
 }
-@media only screen and (max-width:480px){
-    .jumbotron{
-     height:100%;
-    }
+.collapse{
+    display:inline-flex !important;
+}
+.small{
+    color:red;
 }
