@@ -29,6 +29,7 @@
                 <a class="nav-item nav-link text-danger" href="about.html">About</a>
                 <a class="nav-item nav-link text-danger" href=services.html>Services</a>
                 <a class="nav-item nav-link text-danger" href=datacloud.html>DataCloud</a>
+                <a class="nav-item nav-link text-danger" href="related.html">Related</a>
             </div>
         </div>
     </nav>
@@ -36,18 +37,18 @@
 
         <ul class="nav nav-pills nav-fill mt-2 mb-2">
             <li class="nav-item">
-                <a class="nav-link bg-danger" id="GIS">GIS</a>
+                <a class="nav-link bg-danger" id="projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="GIS">GIS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="value">Valuation</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="web">Web Development</a>
-            </li>
         </ul>
 
         <div class="container">
-            <div class="GIS mb-5">
+            <div class="GIS mb-5 invisible">
                 <div class="row border-bottom border-dark text-danger" id="GIS">
                     <h3 class="mx-auto">GIS</h3>
                 </div>
@@ -68,8 +69,7 @@
                     </div>
                     <div class="col-lg-6 col-sm-12 text-center">
                         <h6>Portfolio</h6>
-                        <iframe class="maps" scrolling="no" marginheight="0" marginwidth="0"
-                            src="https://www.arcgis.com/apps/webappviewer/index.html?id=65d769581e324d93a8ac7b4fbad2b4b4"></iframe>
+                        <iframe class="maps" scrolling="no" marginheight="0" marginwidth="0" src="https://www.arcgis.com/apps/webappviewer/index.html?id=65d769581e324d93a8ac7b4fbad2b4b4"></iframe>
 
                     </div>
 
@@ -78,7 +78,9 @@
             <div class="value invisible">
                 <div class="row mt-2">
                     <h6 class="mx-auto">Valuation Services</h6>
-                    <p class="">GMASS began on the idea of a revaluation and staffing company. While our services may have expanded, that vision still stands true to this day. We offer valuation services anywhere from needing an appraiser to assist with appeals all the way
+                    <p class="">GMASS began on the idea of a revaluation and staffing company. While our services may
+                        have expanded, that vision still stands true to this day. We offer valuation services anywhere
+                        from needing an appraiser to assist with appeals all the way
                         to full blown county-wide revaluations.</p>
                 </div>
                 <div class="row">
@@ -96,14 +98,17 @@
                             <img class="mr-3" src="assets/commercial.jpg" height="100" width="125" alt="commercial">
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Commercial and Industrial</h5>
-                                The GMASS commercial team is comprised of the best in the business. We know income producing properties can provide more headache than residential. Our staff is experienced and equipped to help meet these challenges head on. 
+                                The GMASS commercial team is comprised of the best in the business. We know income
+                                producing properties can provide more headache than residential. Our staff is
+                                experienced and equipped to help meet these challenges head on.
                             </div>
                         </li>
                         <li class="media">
-                            <img class="mr-3" src="assets/appraiser.jpg"  height="100" width="125" alt="appraiser">
+                            <img class="mr-3" src="assets/appraiser.jpg" height="100" width="125" alt="appraiser">
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Rent-An-Appraiser</h5>
-                                Sometimes you just need an extra hand in your day to day office duties. We offer a variety of staffing resources to help meet your needs in any way we can.
+                                Sometimes you just need an extra hand in your day to day office duties. We offer a
+                                variety of staffing resources to help meet your needs in any way we can.
                             </div>
                         </li>
                     </ul>
@@ -112,14 +117,20 @@
 
 
             </div>
-            <div class="web invisible">
-
+            <div class="projects">
+                <div class="row border-bottom border-dark text-danger" id="GIS">
+                    <h3 class="mx-auto">Current Projects</h3>
+                </div>
+                <div class="row mt-2">
+                    <div class="col text-center">
+                        <h6>Here at GMASS, we take pride in being industry leaders throughout the State.</h6>
+                        <img src="assets/projects.jpg" class="img-fluid">
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+            <script src="app.js"></script>
 </body>
 <footer class="fixed-bottom text-center bg-light border-top border-dark mt-2 p-2">
     <h6 class="text-center text-danger font-weight-bold">GMASS, Inc. 2018 &copy;</h6>
