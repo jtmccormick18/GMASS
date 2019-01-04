@@ -14,25 +14,38 @@
 
     <title>GMASS Staff</title>
 </head>
-<nav class="navbar sticky-top navbar-expand-md bg-light bg-white border-bottom border-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
     <a class="navbar-brand" href="index.html">
         <img src="logo.png" width="70" height="30" alt="GMASS Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-        aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav" role="navigation">
-            <a class="nav-item nav-link active text-danger" href="index.html">Home
-                <span class="sr-only">(current)</span>
-            </a>
-            <a class="nav-item nav-link text-danger" href="about.html">About</a>
-            <a class="nav-item nav-link text-danger" href="services.html">Services</a>
-            <a class="nav-item nav-link text-danger" href="contact.html">Contact</a>
-            <a class="nav-item nav-link text-danger" href="datacloud.html">DataCloud</a>
-            <a class="nav-item nav-link text-danger" href="related.html">Related</a>
-        </div>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-item nav-link active text-danger" href="index.html">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link text-danger" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link text-danger" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link text-danger" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link text-danger" href="datacloud.html">DataCloud</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link text-danger" href="related.html">Related</a>
+            </li>
+        </ul>
     </div>
 </nav>
 <!--starts body-->
@@ -40,21 +53,33 @@
 <body>
     <div class="jumbotron jumbotron-fluid p-3">
         <div class="container text-center">
-            <h1 class="display-4 text-center text-danger">Meet The Team...</h1>
-            <p class="lead text-center mb-2">GMASS was founded in the early 2000's as a small team of people who 
-                traveled across Georgia scraping for odd jobs county to county. If we said we thought our vision would reach this platform, we'd be lying.
-                However, here we sit as the largest Mass Appraisal firm in the state. With consistent growth year after year, we believe this company
-                 has all of the talent and work ethic it takes to continue our success for many years to come.  
-            </p>
-            <div class="btn-group btn-group-lg text-center" role="group" aria-label="...">
+            <div class="row text-center">
+                <div class="col-md-12 text-center">
+                    <h1 class="display-4 text-center text-danger">Meet The Team...</h1>
+                    <p class="lead text-center mb-2">GMASS was founded in the early 2000's as a small team of people
+                        who
+                        traveled across Georgia scraping for odd jobs county to county. If we said we thought our
+                        vision
+                        would reach this platform, we'd be lying.
+                        However, here we sit as the largest Mass Appraisal firm in the state. With consistent growth
+                        year
+                        after year, we believe this company
+                        has all of the talent and work ethic it takes to continue our success for many years to come.
+                    </p>
+                </div>
+            </div>
+
+            <div class="btn-group btn-group-lg flex-wrap text-center" data-toggle="buttons" role="group" aria-label="...">
                 <button type="button" class="btn btn-danger nav-about" id="leader">Leadership</button>
                 <button type="button" class="btn btn-danger nav-about" id="tech">Senior/Tech</button>
                 <button type="button" class="btn btn-danger nav-about" id="appraisers">Appraisers</button>
                 <button type="button" class="btn btn-danger nav-about" id="support">Support</button>
-
             </div>
+
+
         </div>
     </div>
+
     <div class="container rounded bg-dark">
 
         <div class="row mt-2 bg-dark border-bottom border-danger rounded p-2 leadership leader">
@@ -232,9 +257,11 @@
                 <h4 class="text-danger display-4 font-weight-bold text-center">Appraisal Support Staff</h4>
                 <div class="container rounded bg-white w-75 mt-2 mb-2 text-dark">
                     <p>
-                        One issue surrounding our industry and industries like ours is the turn around from data collection and data implementation.
-                        Luckily, our support team is made up of some go getters. With an average turn around of 2 weeks, we consistently have current 
-                        data to analyze and a team that is worthy of praise. 
+                        One issue surrounding our industry and industries like ours is the turn around from data
+                        collection and data implementation.
+                        Luckily, our support team is made up of some go getters. With an average turn around of 2
+                        weeks, we consistently have current
+                        data to analyze and a team that is worthy of praise.
                     </p>
                 </div>
             </div>
@@ -280,7 +307,9 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 
