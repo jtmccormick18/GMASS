@@ -36,7 +36,7 @@ app.get('/', function(req,res){
 
 app.post('/send-email', function(req, res) {
     var mailOptions = {
-        from: req.body.email, // sender address
+        from: "'Josh' <josh.mccormick@gmass.net>", // sender address
         to: "josh.mccormick@gmass.net", // list of receivers
         cc:"stan@gmass.net",
         subject: req.body.type, // Subject line
@@ -50,5 +50,5 @@ app.post('/send-email', function(req, res) {
          console.log('Message sent: ' + info.response);
      });
 
-     res.redirect("/index.html");
+     res.redirect(path.join(__dirname, '/public', 'index.html'));
  });
