@@ -40,7 +40,7 @@ app.post('/send-email', function(req, res) {
         to: "josh.mccormick@gmass.net", // list of receivers
         cc:"stan@gmass.net",
         subject: req.body.type, // Subject line
-        text: `From: ${req.body.name} who is affiliated with ${req.body.corporation} has sent a message through our online contact form. It states: ${req.body.message}` // plaintext body
+        text: `From: ${req.body.name} - who is affiliated with ${req.body.corporation} has sent a message through our online contact form. It states: ${req.body.message}` // plaintext body
 
     };
         smtpTransport.sendMail(mailOptions, function(error, info) {
@@ -50,5 +50,5 @@ app.post('/send-email', function(req, res) {
          console.log('Message sent: ' + info.response);
      });
 
-     res.redirect(path.join(__dirname, '/public', 'index.html'));
+     res.redirect('/');
  });
