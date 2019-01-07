@@ -33,6 +33,10 @@ var smtpTransport = nodemailer.createTransport({
     }
 });
 
+app.get('/', function(req,res){
+    res.sendFile(path.join(__dirname, '../public', 'index1.html'));
+})
+
 app.post('/send-email', function(req, res) {
     var mailOptions = {
         from: '"Josh" <josh.mccormick@gmass.net>', // sender address
