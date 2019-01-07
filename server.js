@@ -1,22 +1,19 @@
 var express = require('express');
 var path = require('path');
 var app = express();
+const PORT=process.env.PORT||3000;
 var bodyParser = require('body-parser');
 var nodemailer = require("nodemailer");
 var smtpTransport = require('nodemailer-smtp-transport');
 require('dotenv').config();
 
 
-
-app.set('port', 3000);
-
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(bodyParser.json())
 
-var server = app.listen(app.get('port'), function() {
-  var port = server.address().port;
-  console.log('Magic happens on port ' + port);
+var server = app.listen(PORT, function() {
+  console.log('Magic happens on port ' + PORT);
 });
 
 var smtpTransport = nodemailer.createTransport({
