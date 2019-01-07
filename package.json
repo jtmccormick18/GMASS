@@ -1,4 +1,23 @@
 {
+    "name": "GMASS",
+    "version": "1.0.0",
+    "description": "GMASS Website",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "watch":"nodemon watch server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jtmccormick18/GMASS.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/jtmccormick18/GMASS/issues"
+    },
+    "homepage": "https://github.com/jtmccormick18/GMASS#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
