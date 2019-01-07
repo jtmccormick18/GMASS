@@ -50,5 +50,5 @@ app.post('/send-email', function(req, res) {
          console.log('Message sent: ' + info.response);
      });
 
-     return res.location('index.html');
+     return res.redirect('index.html');
  });
