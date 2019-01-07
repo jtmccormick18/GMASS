@@ -36,11 +36,11 @@ app.get('/', function(req,res){
 
 app.post('/send-email', function(req, res) {
     var mailOptions = {
-        from: "'Josh' <josh.mccormick@gmass.net>", // sender address
+        from: '"Automated Web Email" <josh.mccormick@gmass.net>', // sender address
         to: "josh.mccormick@gmass.net", // list of receivers
         cc:"stan@gmass.net",
         subject: req.body.type, // Subject line
-        text: `From: ${req.body.name} - who is affiliated with ${req.body.corporation} has sent a message through our online contact form. It states: ${req.body.message}` // plaintext body
+        text: `From: ${req.body.name} - who is affiliated with ${req.body.corporation} has sent a message through our online contact form. It states: ${req.body.message}. The email provided along with the message is ${req.body.email}` // plaintext body
 
     };
         smtpTransport.sendMail(mailOptions, function(error, info) {
