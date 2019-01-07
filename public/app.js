@@ -63,7 +63,7 @@ const submitContact = function (e) {
         console.log(data);
         $.ajax({
             type: "POST",
-            url: 'email.php',
+            url: '/send-email',
             data:data
         })
             .done(function (res) {

@@ -1,0 +1,12 @@
+{
+  "name": "GMASS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jtmccormick18/GMASS.git",
+  "author": "Josh McCormick <josh.mccormick81@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "nodemailer": "^5.0.0"
+  }
+}
