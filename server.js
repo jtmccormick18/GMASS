@@ -38,7 +38,7 @@ app.post('/send-email', function(req, res) {
     var mailOptions = {
         from: '"Automated Web Email" <josh.mccormick@gmass.net>', // sender address
         to: "josh.mccormick@gmass.net", // list of receivers
-        cc:"stan@gmass.net",
+        cc:"",
         subject: req.body.type, // Subject line
         text: `From: ${req.body.name} - who is affiliated with ${req.body.corporation} has sent a message through our online contact form. It states: ${req.body.message}. The email provided along with the message is ${req.body.email}` // plaintext body
 
@@ -47,6 +47,8 @@ app.post('/send-email', function(req, res) {
          if (error) {
              return console.log(error);
          }
-         return res.location('index.html');
+         console.log('Message sent: ' + info.response);
      });
+
+     return res.location('index.html');
  });
