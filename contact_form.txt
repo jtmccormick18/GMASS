@@ -1,0 +1,41 @@
+<form id="emailForm" action="gamss.net/webformmailer.php" method="post">
+            <div class="form-group">
+                <label for="corporation">Name</label>
+                <input type="text" class="form-control" id="nameField" name="name" placeholder="What is your name?">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" id="emailInput" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="corporation">Who are you affiliated with?</label>
+                <input type="text" class="form-control" name="corporation" id="corporation" placeholder="Please enter the county name or corporation you represent">
+            </div>
+            <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroup">
+                    <option selected>Which option describes your needs?</option>
+                    <option value="Valuation">Valuation</option>
+                    <option value="GIS">GIS</option>
+                    <option value="Staffing">Staffing</option>
+                    <option value="Other">Other</option>
+                </select>
+                <div class="input-group-append">
+                    <label class="input-group-text" for="inputGroupSelect02">Choose A Category</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Please provide a short description of your needs </span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea" name="message" id="summary"></textarea>
+            </div>
+            <div class="input-group text-center mt-2 mb-2">
+                <input class="btn btn-danger" type="submit" name="submit" value="Send" id="contactSubmit"></input>
+            </div>
+            <input type="hidden" name="form_order" value="alpha" />
+            <input type="hidden" name="form_delivery" value="hourly_digest" />
+            <input type="hidden" name="form_format" value="html" />
+        </form>
+    </div>
