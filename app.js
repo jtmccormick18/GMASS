@@ -5,6 +5,10 @@ const getGIS = function () {
     $('#GIS').addClass('bg-danger');
     $('#value').removeClass('bg-danger');
     $('#projects').removeClass('bg-danger');
+    $('.other').addClass('invisible');
+    $('#other').removeClass('bg-danger');
+    $('.portfolio').addClass('invisible');
+    $('#portfolio').removeClass('bg-danger');
 };
 
 const getValuation = function () {
@@ -14,6 +18,10 @@ const getValuation = function () {
     $('#GIS').removeClass('bg-danger');
     $('#value').addClass('bg-danger');
     $('#projects').removeClass('bg-danger');
+    $('.other').addClass('invisible');
+    $('#other').removeClass('bg-danger');
+    $('.portfolio').addClass('invisible');
+    $('#portfolio').removeClass('bg-danger');
 };
 const getProjects = function () {
     $('.value').addClass('invisible');
@@ -22,7 +30,35 @@ const getProjects = function () {
     $('#GIS').removeClass('bg-danger');
     $('#value').removeClass('bg-danger');
     $('#projects').addClass('bg-danger');
+    $('.other').addClass('invisible');
+    $('#other').removeClass('bg-danger');
+    $('.portfolio').addClass('invisible');
+    $('#portfolio').removeClass('bg-danger');
 };
+const getOther = function(){
+    $('.value').addClass('invisible');
+    $('.GIS').addClass('invisible');
+    $('.projects').addClass('invisible');
+    $('#GIS').removeClass('bg-danger');
+    $('#value').removeClass('bg-danger');
+    $('#projects').removeClass('bg-danger');
+    $('.other').removeClass('invisible');
+    $('#other').addClass('bg-danger');
+    $('.portfolio').addClass('invisible');
+    $('#portfolio').removeClass('bg-danger');
+}
+const getPortfolio = function(){
+    $('.value').addClass('invisible');
+    $('.GIS').addClass('invisible');
+    $('.projects').addClass('invisible');
+    $('#GIS').removeClass('bg-danger');
+    $('#value').removeClass('bg-danger');
+    $('#projects').removeClass('bg-danger');
+    $('.other').addClass('invisible');
+    $('#other').removeClass('bg-danger');
+    $('.portfolio').removeClass('invisible');
+    $('#portfolio').addClass('bg-danger');
+}
 
 const getLeadership = function () {
     $('.tech').addClass('invisible');
@@ -82,9 +118,24 @@ const submitContact = function (e) {
 $('#GIS').on('click', getGIS);
 $('#value').on('click', getValuation);
 $('#projects').on('click', getProjects);
+$('#other').on('click',getOther);
+$('#portfolio').on('click',getPortfolio);
 $('.nav-about').hover(function () {
     $(this).toggleClass('bg-dark')
 });
+//Setting portfolio items to change pictures
+$('.comp').on('click',function(){
+    $('.comp').removeClass('bg-primary');
+    $(this).addClass('bg-primary');
+    $('.comp').removeClass('text-white');
+    $(this).addClass('text-white');
+    if($(this).data('attr')==="front"){
+        $('#comp').attr('src','assets/portfolio/comp_report.png')
+    } else if ($(this).data('attr')==="back"){
+        $('#comp').attr('src','assets/portfolio/comp_location.png')
+    }
+    
+})
 $('#leader').on('click', getLeadership)
 $('#tech').on('click', getTech);
 $('#appraisers').on('click', getAppraisers);
