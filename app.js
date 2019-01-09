@@ -123,6 +123,7 @@ $('#portfolio').on('click',getPortfolio);
 $('.nav-about').hover(function () {
     $(this).toggleClass('bg-dark')
 });
+
 //Setting portfolio items to change pictures
 $('.comp').on('click',function(){
     $('.comp').removeClass('bg-primary text-white');
