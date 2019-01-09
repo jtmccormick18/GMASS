@@ -125,10 +125,8 @@ $('.nav-about').hover(function () {
 });
 //Setting portfolio items to change pictures
 $('.comp').on('click',function(){
-    $('.comp').removeClass('bg-primary');
-    $(this).addClass('bg-primary');
-    $('.comp').removeClass('text-white');
-    $(this).addClass('text-white');
+    $('.comp').removeClass('bg-primary text-white');
+    $(this).addClass('bg-primary text-white');
     if($(this).data('attr')==="front"){
         $('#comp').attr('src','assets/portfolio/comp_report.png')
     } else if ($(this).data('attr')==="back"){
@@ -140,4 +138,5 @@ $('#leader').on('click', getLeadership)
 $('#tech').on('click', getTech);
 $('#appraisers').on('click', getAppraisers);
 $('#support').on('click', getSupport);
+//submitting contact form
 $('#contactSubmit').on('click', submitContact);
