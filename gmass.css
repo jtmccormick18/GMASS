@@ -49,9 +49,21 @@ body{
 .dataembed{
     border:2px solid white !important;
 }
-
+.staffDescrip{
+    font-size:1rem;
+    font-family: 'Exo', sans-serif;
+    color:white;
+    text-shadow: .25rem auto red;
+}
+.staffCat{
+    text-shadow:
+		-.5px -.5px 0 white,
+		.5px -.5px 0 white,
+		-.5px .5px 0 white,
+		.5px .5px 0 white;
+}
 .small{
-    color:red;
+    color: rgba(238, 26, 18, 0.829);
     padding:0px auto;
     margin: 0 auto;
     font-size: 1.15rem;
@@ -59,6 +71,7 @@ body{
 }
 .empName{
     font-size:1.5rem;
+    font-family:'Exo',sans-serif;
     padding:0px auto;
     margin:0 auto;
     margin-top:1px;

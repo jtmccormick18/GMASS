@@ -121,7 +121,7 @@ $('#projects').on('click', getProjects);
 $('#other').on('click',getOther);
 $('#portfolio').on('click',getPortfolio);
 $('.nav-about').hover(function () {
-    $(this).toggleClass('bg-dark')
+    $(this).toggleClass('bg-danger text-white')
 });
 
 //Setting portfolio items to change pictures
