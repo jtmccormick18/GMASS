@@ -33,24 +33,6 @@ body{
 body{
     padding-bottom: 10%;
 }
-/* .navbar-header {
-    float: none;
-  }
-  .navbar-toggle {
-    display: block;
-  }
-  .navbar-collapse.collapse {
-    display: none!important;
-  }
-  .navbar-nav {
-    float: none!important;
-  }
-  .navbar-nav>li {
-    float: none;
-  }
-  .navbar-collapse.collapse.in{
-    display:block !important;
-  } */
 .sidenav{
     height:100%;
 }
@@ -70,6 +52,16 @@ body{
 
 .small{
     color:red;
+    padding:0px auto;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.empName{
+    font-size:1.5rem;
+    padding:0px auto;
+    margin:0 auto;
+    margin-top:1px;
 }
 @media (min-width:768px) {
     .navbar-collapse {
