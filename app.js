@@ -2,62 +2,71 @@ const getGIS = function () {
     $('.GIS').removeClass('invisible');
     $('.value').addClass('invisible');
     $('.projects').addClass('invisible');
-    $('#GIS').addClass('bg-danger');
-    $('#value').removeClass('bg-danger');
-    $('#projects').removeClass('bg-danger');
+    $('#GIS').addClass('bg-danger text-white rounded');
+    $('#value').removeClass('bg-danger text-white rounded');
+    $('#projects').removeClass('bg-danger text-white rounded');
     $('.other').addClass('invisible');
-    $('#other').removeClass('bg-danger');
+    $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
-    $('#portfolio').removeClass('bg-danger');
+    $('#portfolio').removeClass('bg-danger text-white rounded');
 };
+const jumboVal=function(){
+    localStorage.Services="Valuation";
+}
+const jumboGIS=function(){
+    localStorage.Services="GIS"
+}
+const jumboOther=function(){
+    localStorage.Services="Software"
+}
 
 const getValuation = function () {
     $('.value').removeClass('invisible');
     $('.GIS').addClass('invisible');
     $('.projects').addClass('invisible');
-    $('#GIS').removeClass('bg-danger');
-    $('#value').addClass('bg-danger');
-    $('#projects').removeClass('bg-danger');
+    $('#GIS').removeClass('bg-danger text-white rounded');
+    $('#value').addClass('bg-danger text-white rounded');
+    $('#projects').removeClass('bg-danger text-white rounded');
     $('.other').addClass('invisible');
-    $('#other').removeClass('bg-danger');
+    $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
-    $('#portfolio').removeClass('bg-danger');
+    $('#portfolio').removeClass('bg-danger text-white rounded');
 };
 const getProjects = function () {
     $('.value').addClass('invisible');
     $('.GIS').addClass('invisible');
     $('.projects').removeClass('invisible');
-    $('#GIS').removeClass('bg-danger');
-    $('#value').removeClass('bg-danger');
-    $('#projects').addClass('bg-danger');
+    $('#GIS').removeClass('bg-danger text-white rounded');
+    $('#value').removeClass('bg-danger text-white rounded');
+    $('#projects').addClass('bg-danger text-white rounded');
     $('.other').addClass('invisible');
-    $('#other').removeClass('bg-danger');
+    $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
-    $('#portfolio').removeClass('bg-danger');
+    $('#portfolio').removeClass('bg-danger text-white rounded');
 };
 const getOther = function(){
     $('.value').addClass('invisible');
     $('.GIS').addClass('invisible');
     $('.projects').addClass('invisible');
-    $('#GIS').removeClass('bg-danger');
-    $('#value').removeClass('bg-danger');
-    $('#projects').removeClass('bg-danger');
+    $('#GIS').removeClass('bg-danger text-white rounded');
+    $('#value').removeClass('bg-danger text-white rounded');
+    $('#projects').removeClass('bg-danger text-white rounded');
     $('.other').removeClass('invisible');
-    $('#other').addClass('bg-danger');
+    $('#other').addClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
-    $('#portfolio').removeClass('bg-danger');
+    $('#portfolio').removeClass('bg-danger text-white rounded');
 }
 const getPortfolio = function(){
     $('.value').addClass('invisible');
     $('.GIS').addClass('invisible');
     $('.projects').addClass('invisible');
-    $('#GIS').removeClass('bg-danger');
-    $('#value').removeClass('bg-danger');
-    $('#projects').removeClass('bg-danger');
+    $('#GIS').removeClass('bg-danger text-white rounded');
+    $('#value').removeClass('bg-danger text-white rounded');
+    $('#projects').removeClass('bg-danger text-white rounded');
     $('.other').addClass('invisible');
-    $('#other').removeClass('bg-danger');
+    $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').removeClass('invisible');
-    $('#portfolio').addClass('bg-danger');
+    $('#portfolio').addClass('bg-danger text-white rounded');
 }
 
 const getLeadership = function () {
@@ -121,8 +130,22 @@ $('#projects').on('click', getProjects);
 $('#other').on('click',getOther);
 $('#portfolio').on('click',getPortfolio);
 $('.nav-about').hover(function () {
-    $(this).toggleClass('bg-danger text-white')
+    $(this).toggleClass('bg-danger text-white rounded text-white')
 });
+$('.list-group-item').hover(function(){
+    $(this).toggleClass('bg-light');
+})
+//If accessed from JumboTron, defining which DOM elements to show
+$(function(){
+    if(localStorage.Services==='GIS'){
+        getGIS();
+    } else if(localStorage.Services==='Valuation'){
+        getValuation();
+    } else if(localStorage.Services==='Software'){
+        getOther();
+    }
+    localStorage.Services=''
+})
 
 //Setting portfolio items to change pictures
 $('.comp').on('click',function(){
@@ -135,6 +158,9 @@ $('.comp').on('click',function(){
     }
     
 })
+$('#GISJumbo').on('click',jumboGIS);
+$('#valJumbo').on('click',jumboVal);
+$('#softwareJumbo').on('click',jumboOther);
 $('#leader').on('click', getLeadership)
 $('#tech').on('click', getTech);
 $('#appraisers').on('click', getAppraisers);
