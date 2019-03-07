@@ -1,7 +1,26 @@
 body{
   background-image: url(assets/atlanta.jpg);
     background-size: cover;
-  }
+    padding-bottom:10%;
+}
+.home{
+    padding-bottom:0%;
+    background-image: none;
+    background-size: cover;
+}
+.bannerContainer {
+    position:relative;    
+}
+
+.homeNav {
+    position:absolute;
+    top:0;
+    z-index:10;
+    background-color: white; opacity: 0.8; filter: alpha(opacity=80);
+    width:100%;
+}
+
+
 .caption{
     box-shadow: 0 0 5px #C8C8C8;
     transition: all 0.3s ease 0s;
@@ -12,7 +31,25 @@ body{
 .img-circle {
     border-radius: 0;
 }
+.carousel-inner { 
+    height: 100vh;
+ }
 
+ .carousel-item  { 
+    height: 100%;
+ }
+ /* .carousel-inner img {
+    margin: auto !important;
+  } */
+#logoDisplay{
+    position: relative;   
+    top: 50%;
+    transform: translateY(-50%);
+}
+.logoCap{
+    top: 70%;
+transform: translateY(-50%);
+}
 .ratio {
     background-position: center center;
     background-repeat: no-repeat;
@@ -29,9 +66,6 @@ body{
     display: block;
     height: auto;
     max-width: 100%;
-}
-body{
-    padding-bottom: 10%;
 }
 .sidenav{
     height:100%;
@@ -69,6 +103,7 @@ body{
     font-size: 1.15rem;
     font-weight: bold;
 }
+
 .empName{
     font-size:1.5rem;
     font-family:'Exo',sans-serif;
@@ -80,10 +115,24 @@ body{
     .navbar-collapse {
         width: 100%;
     }
+   
 }
 @media(max-width:768px){
     .staffCat{
         text-shadow: none;
         font-size:3rem;
+    }
+    .carCap{
+        top: 60%;
+        transform: translateY(-50%);
+    }
+    #logoDisplay{
+        position: relative;   
+        top: 30%;
+        transform: translateY(-50%);
+    }
+    .logoCap{
+        top: 60%;
+    transform: translateY(-50%);
     }
 }
