@@ -130,11 +130,11 @@ $('#projects').on('click', getProjects);
 $('#other').on('click',getOther);
 $('#portfolio').on('click',getPortfolio);
 $('.nav-about').hover(function () {
-    $(this).toggleClass('bg-light text-dark text-white')
+    $(this).toggleClass('bg-dark text-white')
 });
 $('.nav-about').on('click',function () {
     $('.nav-about').removeClass('bg-danger');
-    $(this).addClass('bg-danger');
+    $(this).addClass('bg-danger text-white');
 });
 $('.list-group-item').hover(function(){
     $(this).toggleClass('bg-light');
