@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="gmass.css">
     <link rel="icon" href="logo.png">
     <title>GMASS Services</title>
@@ -50,7 +50,7 @@
 <body>
 
     <div class="container-fluid mt-2">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-3 mt-2">
                 <ul class="list-group">
                     <li class="list-group-item">
@@ -69,230 +69,266 @@
                         <a class="nav-link" id="portfolio">Portfolio & Client Stories</a>
                     </li>
                 </ul>
+            </div> -->
+        <div class="container-fluid m-2 mx-auto">
+            <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="projects" data-toggle="tab" href="#Projects" role="tab"
+                        aria-controls="home" aria-selected="true">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="GIS" data-toggle="tab" href="#GIS" role="tab" aria-controls="profile"
+                        aria-selected="false">GIS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="value" data-toggle="tab" href="#Valuation" role="tab"
+                        aria-controls="contact" aria-selected="false">Valuation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="other" data-toggle="tab" href="#Other" role="tab" aria-controls="other"
+                        aria-selected="false">Analytics & Other Specialties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="portfolio" data-toggle="tab" href="#Portfolio" role="tab"
+                        aria-controls="portfolio" aria-selected="false">Portfolio of Work</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+                <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab"></div>
+                <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab"></div>
             </div>
-            <div class="container col-md-8 bg-white rounded m-2">
-                <div class="GIS mb-5 p-2 invisible">
-                    <div class="row border-bottom border-dark text-danger" id="GIS">
-                        <h3 class="mx-auto">GIS</h3>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-lg-6 col-sm-12 text-center">
-                            <h6>Why us?</h6>
-                            <ul class="list-group">
-                                <li class="list-group-item text-danger">ESRI Certfied</li>
-                                <li class="list-group-item text-danger">Seamless integration with SQL Server to create dynamic
-                                    mapping
-                                    applications</li>
-                                <li class="list-group-item text-danger">Splits/Combinations</li>
-                                <li class="list-group-item text-danger">Objective based mapping strategies to help during appeals
-                                    or
-                                    find new construction</li>
-
-                            </ul>
-                            <br>
-                            <p>No GIS project is too big nor too small for us to tackle. For inquiries, please email <a href="mailto:gis@gmass.net" class="text-decoration-none">GIS@gmass.net</a></p>
-                        </div>
-                        <div class="col-lg-6 col-sm-12 text-center">
-                            <h6>Online Mapping</h6>
-                            <iframe class="maps" scrolling="no" marginheight="0" marginwidth="0" src="https://www.arcgis.com/apps/webappviewer/index.html?id=65d769581e324d93a8ac7b4fbad2b4b4"></iframe>
-
-                        </div>
-
-                    </div>
+            <div class="GIS mb-5 p-2 invisible">
+                <div class="row text-danger" id="GIS">
+                    <h3 class="mx-auto">GIS</h3>
                 </div>
-                <div class="value p-2 invisible">
-                    <div class="row mt-2">
-                        <h6 class="mx-auto">Valuation Services</h6>
-                        <p class="">GMASS began on the idea of a revaluation and staffing company. While our services
-                            may
-                            have expanded, that vision still stands true to this day. We offer a wide range of valuation services
-                            that covers a need for an extra appraiser during busy season all the way
-                            to full blown county-wide revaluations.</p>
-                    </div>
-                    <div class="row">
-                        <ul class="list-unstyled">
-                            <li class="media">
-                                <img class="mr-3" src="assets/subd.png" height="100" width="125" alt="residentail">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Residential</h5>
-                                    Residential Appraisals are our bread and butter. We have
-                                    a demonstrated history of success in providing reliable values and keeping your
-                                    county
-                                    in compliance with industry standards.
-                                </div>
-                            </li>
-                            <li class="media my-4">
-                                <img class="mr-3" src="assets/commercial.jpg" height="100" width="125" alt="commercial">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Commercial and Industrial</h5>
-                                    The GMASS commercial team is comprised of the best in the business. We know income
-                                    producing properties can provide more headache than residential. Our staff is
-                                    experienced and equipped to help meet these challenges head on.
-                                </div>
-                            </li>
-                            <li class="media my-4">
-                                <img class="mr-3" src="assets/appraiser.jpg" height="100" width="125" alt="appraiser">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Rent-An-Appraiser</h5>
-                                    Sometimes you just need an extra hand in your day to day office duties. We offer a
-                                    variety of staffing resources to help meet your needs in any way we can.
-                                </div>
-                            </li>
+                <div class="row mt-2">
+                    <div class="col-lg-6 col-sm-12 text-center">
+                        <h6>Why us?</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item text-danger">ESRI Certfied</li>
+                            <li class="list-group-item text-danger">Seamless integration with SQL Server to create
+                                dynamic
+                                mapping
+                                applications</li>
+                            <li class="list-group-item text-danger">Splits/Combinations</li>
+                            <li class="list-group-item text-danger">Objective based mapping strategies to help during
+                                appeals
+                                or
+                                find new construction</li>
+
                         </ul>
+                        <br>
+                        <p>No GIS project is too big nor too small for us to tackle. For inquiries, please email <a
+                                href="mailto:gis@gmass.net" class="text-decoration-none">GIS@gmass.net</a></p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 text-center">
+                        <h6>Online Mapping</h6>
+                        <iframe class="maps" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://www.arcgis.com/apps/webappviewer/index.html?id=65d769581e324d93a8ac7b4fbad2b4b4"></iframe>
 
                     </div>
-
 
                 </div>
-                <div class="other p-2 invisible">
-                    <div class="row mt-2">
-                        <h6 class="mx-auto">Miscellaneous Services</h6>
-                        <p class="">GMASS has a staff with a diverse background. It's hard to confine our ability to
-                            provide you assistance on a category by category basis.
-                            With a staff of past Chief Appraisers, Software Developers, Database Administrators, and
-                            more, we are confident we can find a solution for almost anything thrown our way.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <ul class="list-unstyled">
-                            <li class="media">
-                                <img class="mr-3" src="assets/services.jpg" height="100" width="125" alt="residentail">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Specialized Services</h5>
-                                    Our entire staff has experience in a Tax Assessor's office. Our services include
-                                    but are not limited to:
-                                    <ul>
-                                        <li>
-                                            Developing a Plan of Action
-                                        </li>
-                                        <li>
-                                            Contract Chief Appraiser
-                                        </li>
-                                        <li>
-                                            Expert Witness
-                                        </li>
-                                        <li>
-                                            Appeal Hearings
-                                        </li>
-                                        <li>
-                                            New Property Tax Law Changes
-                                        </li>
-                                        <li>
-                                            Compliance Solutions
-                                        </li>
-                                        <li>
-                                            Staff Training and Workshop Hosting
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="media my-4">
-                                <img class="mr-3" src="assets/sql.jpg" height="100" width="125" alt="commercial">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Database Management/Technical Solutions</h5>
-                                    Technology is a powerful tool that can save you time, resources, and most
-                                    importantly - money. While we pride ourselves on our GIS abilities, our technical
-                                    team is capable of much more than just that.
-                                    <ul>
-                                        <li>
-                                            Custom SQL scripts to reduce reduntant tasks that can be painfully annoying
-                                            and time consuming.
-                                        </li>
-                                        <li>
-                                            SQL inspired Excel Documents for accurate data to analyze
-                                        </li>
-                                        <li>
-                                            Remote Friendly Workplace - VPN or Remote Desktop setup
-                                        </li>
-                                        <li>
-                                            Custom Web Applications
-                                        </li>
-                                        <li>
-                                            DataCloud Demonstration
-                                        </li>
-                                        <li>
-                                            And More!
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </li>
-                            <li class="media my-4">
-                                <img class="mr-3" src="assets/jobs.jpg" height="100" width="125" alt="appraiser">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Reach Out!</h5>
-                                    Our CEO puts it best - "We will mop your floors if you'll let us!" While we have
-                                    our
-                                    areas of expertise, we didn't come
-                                    to be experts by staying in our comfort zone. It's not typical for us to pass up an
-                                    opportunity to learn and grow. If you have an odd job
-                                    or can't find the solution to an ongoing problem, reach out and we will help in
-                                    every way possible.
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-
+            </div>
+            <div class="value p-2 invisible">
+                <div class="row mt-2">
+                    <h6 class="mx-auto">Valuation Services</h6>
+                    <p class="">GMASS began on the idea of a revaluation and staffing company. While our services
+                        may
+                        have expanded, that vision still stands true to this day. We offer a wide range of valuation
+                        services
+                        that covers a need for an extra appraiser during busy season all the way
+                        to full blown county-wide revaluations.</p>
+                </div>
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img class="mr-3" src="assets/subd.png" height="100" width="125" alt="residentail">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Residential</h5>
+                                Residential Appraisals are our bread and butter. We have
+                                a demonstrated history of success in providing reliable values and keeping your
+                                county
+                                in compliance with industry standards.
+                            </div>
+                        </li>
+                        <li class="media my-4">
+                            <img class="mr-3" src="assets/commercial.jpg" height="100" width="125" alt="commercial">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Commercial and Industrial</h5>
+                                The GMASS commercial team is comprised of the best in the business. We know income
+                                producing properties can provide more headache than residential. Our staff is
+                                experienced and equipped to help meet these challenges head on.
+                            </div>
+                        </li>
+                        <li class="media my-4">
+                            <img class="mr-3" src="assets/appraiser.jpg" height="100" width="125" alt="appraiser">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Rent-An-Appraiser</h5>
+                                Sometimes you just need an extra hand in your day to day office duties. We offer a
+                                variety of staffing resources to help meet your needs in any way we can.
+                            </div>
+                        </li>
+                    </ul>
 
                 </div>
-                <div class="portfolio p-2 invisible">
-                    <div class="row border-bottom border-dark text-danger" id="GIS">
-                        <h3 class="mx-auto">Portfolio of Work and Client Testimony</h3>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-md-4 col-xs-10 mx-auto">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="assets/portfolio/comp_report.png" height="200" width="125" alt="Card image cap"
-                                    id="comp">
-                                <div class="card-body">
-                                    <a href="assets/Comp_Sheet_Res_Imp.pdf" target="_blank">
-                                        <h5 class="card-title">Comparable Reports</h5>
-                                    </a>
-                                    <p class="card-text">Our comp sheets provide accurate and reliable data that is
-                                        easy to understand.
-                                        These are a valuable tool during appeals.
-                                    </p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item text-center comp" data-attr="front">Front</li>
-                                    <li class="list-group-item text-center comp" data-attr="back">Back</li>
+
+
+            </div>
+            <div class="other p-2 invisible">
+                <div class="row mt-2">
+                    <h6 class="mx-auto">Miscellaneous Services</h6>
+                    <p class="">GMASS has a staff with a diverse background. It's hard to confine our ability to
+                        provide you assistance on a category by category basis.
+                        With a staff of past Chief Appraisers, Software Developers, Database Administrators, and
+                        more, we are confident we can find a solution for almost anything thrown our way.
+                    </p>
+                </div>
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img class="mr-3" src="assets/services.jpg" height="100" width="125" alt="residentail">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Specialized Services</h5>
+                                Our entire staff has experience in a Tax Assessor's office. Our services include
+                                but are not limited to:
+                                <ul>
+                                    <li>
+                                        Developing a Plan of Action
+                                    </li>
+                                    <li>
+                                        Contract Chief Appraiser
+                                    </li>
+                                    <li>
+                                        Expert Witness
+                                    </li>
+                                    <li>
+                                        Appeal Hearings
+                                    </li>
+                                    <li>
+                                        New Property Tax Law Changes
+                                    </li>
+                                    <li>
+                                        Compliance Solutions
+                                    </li>
+                                    <li>
+                                        Staff Training and Workshop Hosting
+                                    </li>
                                 </ul>
                             </div>
+                        </li>
+                        <li class="media my-4">
+                            <img class="mr-3" src="assets/sql.jpg" height="100" width="125" alt="commercial">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Database Management/Technical Solutions</h5>
+                                Technology is a powerful tool that can save you time, resources, and most
+                                importantly - money. While we pride ourselves on our GIS abilities, our technical
+                                team is capable of much more than just that.
+                                <ul>
+                                    <li>
+                                        Custom SQL scripts to reduce reduntant tasks that can be painfully annoying
+                                        and time consuming.
+                                    </li>
+                                    <li>
+                                        SQL inspired Excel Documents for accurate data to analyze
+                                    </li>
+                                    <li>
+                                        Remote Friendly Workplace - VPN or Remote Desktop setup
+                                    </li>
+                                    <li>
+                                        Custom Web Applications
+                                    </li>
+                                    <li>
+                                        DataCloud Demonstration
+                                    </li>
+                                    <li>
+                                        And More!
+                                    </li>
+                                </ul>
 
+                            </div>
+                        </li>
+                        <li class="media my-4">
+                            <img class="mr-3" src="assets/jobs.jpg" height="100" width="125" alt="appraiser">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Reach Out!</h5>
+                                Our CEO puts it best - "We will mop your floors if you'll let us!" While we have
+                                our
+                                areas of expertise, we didn't come
+                                to be experts by staying in our comfort zone. It's not typical for us to pass up an
+                                opportunity to learn and grow. If you have an odd job
+                                or can't find the solution to an ongoing problem, reach out and we will help in
+                                every way possible.
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+            <div class="portfolio p-2 invisible">
+                <div class="row text-danger" id="GIS">
+                    <h3 class="mx-auto">Portfolio of Work and Client Testimony</h3>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-4 col-xs-10 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/portfolio/comp_report.png" height="200" width="125"
+                                alt="Card image cap" id="comp">
+                            <div class="card-body">
+                                <a href="assets/Comp_Sheet_Res_Imp.pdf" target="_blank">
+                                    <h5 class="card-title">Comparable Reports</h5>
+                                </a>
+                                <p class="card-text">Our comp sheets provide accurate and reliable data that is
+                                    easy to understand.
+                                    These are a valuable tool during appeals.
+                                </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-center comp" data-attr="front">Front</li>
+                                <li class="list-group-item text-center comp" data-attr="back">Back</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4 col-xs-10 mx-auto">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="assets/portfolio/sketch_overlay.png" alt="Card image cap"
-                                    id="sketch">
-                                <div class="card-body">
-                                        <h5 class="card-title">Sketch Overlay</h5>
-                                    <p class="card-text">Finding new construction and missed additions using GIS is a
-                                        great way to save
-                                        money and an even better way to flag things that can be missed in the field.
-                                    </p>
-                                </div>
+
+                    </div>
+                    <div class="col-md-4 col-xs-10 mx-auto">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/portfolio/sketch_overlay.png" alt="Card image cap"
+                                id="sketch">
+                            <div class="card-body">
+                                <h5 class="card-title">Sketch Overlay</h5>
+                                <p class="card-text">Finding new construction and missed additions using GIS is a
+                                    great way to save
+                                    money and an even better way to flag things that can be missed in the field.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="projects p-2">
-                    <div class="row border-bottom border-dark text-danger" id="GIS">
-                        <h3 class="mx-auto">Current Projects</h3>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col text-center">
-                            <h6>Here at GMASS, we take pride in being industry leaders throughout the State.</h6>
-                            <img src="assets/projects.jpg" class="img-fluid">
-                        </div>
+            </div>
+            <div class="projects p-2">
+                <div class="row text-danger" id="GIS">
+                    <h3 class="mx-auto">Current Projects</h3>
+                </div>
+                <div class="row mt-2">
+                    <div class="col text-center">
+                        <h6>Here at GMASS, we take pride in being industry leaders throughout the State.</h6>
+                        <img src="assets/projects.jpg" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
