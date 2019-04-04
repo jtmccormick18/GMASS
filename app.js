@@ -9,6 +9,8 @@ const getGIS = function () {
     $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
     $('#portfolio').removeClass('bg-danger text-white rounded');
+    $('#client').removeClass('bg-danger text-white rounded');
+    $('.client').addClass('invisible');
 };
 const jumboVal=function(){
     localStorage.Services="Valuation";
@@ -31,6 +33,8 @@ const getValuation = function () {
     $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
     $('#portfolio').removeClass('bg-danger text-white rounded');
+    $('#client').removeClass('bg-danger text-white rounded');
+    $('.client').addClass('invisible');
 };
 const getProjects = function () {
     $('.value').addClass('invisible');
@@ -43,6 +47,8 @@ const getProjects = function () {
     $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
     $('#portfolio').removeClass('bg-danger text-white rounded');
+    $('#client').removeClass('bg-danger text-white rounded');
+    $('.client').addClass('invisible');
 };
 const getOther = function(){
     $('.value').addClass('invisible');
@@ -55,6 +61,8 @@ const getOther = function(){
     // $('#other').addClass('bg-danger text-white rounded');
     $('.portfolio').addClass('invisible');
     $('#portfolio').removeClass('bg-danger text-white rounded');
+    $('#client').removeClass('bg-danger text-white rounded');
+    $('.client').addClass('invisible');
 }
 const getPortfolio = function(){
     $('.value').addClass('invisible');
@@ -66,7 +74,21 @@ const getPortfolio = function(){
     $('.other').addClass('invisible');
     $('#other').removeClass('bg-danger text-white rounded');
     $('.portfolio').removeClass('invisible');
+    $('#client').removeClass('bg-danger text-white rounded');
+    $('.client').addClass('invisible');
     // $('#portfolio').addClass('bg-danger text-white rounded');
+}
+const getClient=function(){
+    $('.value').addClass('invisible');
+    $('.GIS').addClass('invisible');
+    $('.projects').addClass('invisible');
+    $('#GIS').removeClass('bg-danger text-white rounded');
+    $('#value').removeClass('bg-danger text-white rounded');
+    $('#projects').removeClass('bg-danger text-white rounded');
+    $('.other').addClass('invisible');
+    $('#other').removeClass('bg-danger text-white rounded');
+    $('.portfolio').addClass('invisible');
+    $('.client').removeClass('invisible');
 }
 
 const getLeadership = function () {
@@ -124,11 +146,21 @@ const submitContact = function (e) {
     } else $('#emailForm').prepend('<h5 class="text-danger">Uh Oh! Please Fill Out All Fields and Try Again!</h5>');
 }
 
+
+$('.demo').on('click',function(){
+    if($(this).paused){
+        $(this).play();
+    } else{
+        $(this).pause();
+    }
+})
+
 $('#GIS').on('click', getGIS);
 $('#value').on('click', getValuation);
 $('#projects').on('click', getProjects);
 $('#other').on('click',getOther);
 $('#portfolio').on('click',getPortfolio);
+$('#client').on('click',getClient);
 $('.nav-about').hover(function () {
     $(this).toggleClass('bg-dark text-white')
 });

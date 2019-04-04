@@ -1,5 +1,5 @@
 body{
-    background-color:#e9ecef;
+    background-image: url('https://wallpapertag.com/wallpaper/full/9/7/8/129232-new-1280x720-background-2560x1440-for-tablet.jpg');
     background-size: cover;
     padding-bottom:10%;
 }
@@ -21,7 +21,10 @@ body{
     background-color: white; opacity: 0.8; filter: alpha(opacity=80);
     width:100%;
 }
-
+.serviceImage{
+    width:auto;
+    max-height:20vh;
+}
 
 .caption{
     box-shadow: 0 0 5px #C8C8C8;
@@ -58,6 +61,9 @@ body{
     padding-bottom: 100%;
     position: relative;
     max-width: 100%;
+}
+.servList{
+    max-width: 50%;background-color: none
 }
 .picArea{
     width:90% !important;
@@ -124,6 +130,11 @@ body{
     word-wrap: normal;
     max-width:90%;
 }
+.demo{
+    max-height:30vh;
+    width:auto;
+    max-width:100%;
+}
 @media (min-width:768px) {
     .navbar-collapse {
         width: 100%;
@@ -135,9 +146,19 @@ body{
         text-shadow: none;
         font-size:3rem;
     }
+    .helperImg{
+        display:none
+    }
     .empName{
         word-wrap: none;
         font-size:1rem;
+    }
+    .serviceImage{
+        width:auto;
+        max-height:15vh;
+    }
+    .servList{
+        max-width:100%;
     }
     .carCap{
         top: 60%;
