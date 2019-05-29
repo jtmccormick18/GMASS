@@ -146,6 +146,9 @@ body{
         text-shadow: none;
         font-size:3rem;
     }
+    .navbar-right{
+        display:none;
+    }
     .helperImg{
         display:none
     }
