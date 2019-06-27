@@ -208,6 +208,10 @@ body{
         font-size:110% !important;
     
     }
+    .clientJumbo{
+        padding:0;
+        padding-top:10px;
+    }
     .aboutTag{
         margin:0 auto !important;
         text-align:center !important;
