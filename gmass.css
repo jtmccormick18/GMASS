@@ -3,6 +3,24 @@ body{
     background-size: cover;
     padding-bottom:10%;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 .home{
     padding-bottom:0%;
     background-image: none;
@@ -21,6 +39,19 @@ body{
     background-color: white; opacity: 0.8; filter: alpha(opacity=80);
     width:100%;
 }
+#contactUsHeader{
+    color:black;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    /* height: 50vh; */
+    max-height:75vh;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
 .serviceImage{
     width:auto;
     max-height:20vh;
